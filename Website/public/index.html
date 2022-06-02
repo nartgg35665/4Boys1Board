@@ -1,0 +1,57 @@
+<!-- Complete Project Details at: https://RandomNerdTutorials.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Username</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="general-style.css">
+        <link rel="stylesheet" href="username-style.css">
+        <script src="general.js" defer></script>
+        <script src="username-script.js" defer></script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+        <script>
+            // REPLACE WITH YOUR web app's Firebase configuration
+            const firebaseConfig = {
+                apiKey: "AIzaSyDZce1suiNE3m4-_2YZkS7pzMJrMImpIV4",
+                authDomain: "eslabproj.firebaseapp.com",
+                databaseURL: "https://eslabproj-default-rtdb.asia-southeast1.firebasedatabase.app",
+                projectId: "eslabproj",
+                storageBucket: "eslabproj.appspot.com",
+                messagingSenderId: "190366192148",
+                appId: "1:190366192148:web:4e8703b4e8c8032fc4cd01"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            //var database = firebase.database();
+        </script>
+    </head>
+  <body>
+    <nav id="nav">
+            <h2 id="header">ESLAB</h2>
+        </nav>
+        <div class="ctn">
+            <div class="search-bar">
+                <input type="search" id="search" placeholder="enter username">
+            </div>
+        </div>
+        <p id="search-result"></p>
+        <table id="task-table">
+            <tr class="hrow">
+                <th>No.</th>
+                <th> </th>
+                <th>Username</th>
+                <th>Latest Temp</th>
+            </tr>
+            
+        </table>
+    </body>
+</html>

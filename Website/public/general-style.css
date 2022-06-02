@@ -1,0 +1,88 @@
+body {
+  font-family: Roboto;
+  font-style: normal;
+  background-color: #ededed;
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+p{
+  font-weight: 900;
+  text-align: center;
+  font-size: 24px;
+}
+
+body > * {
+  margin: 1rem;
+}
+
+nav {
+  background-color: white;
+  padding: 0.5rem 2rem;
+  font-size: 22px;
+  margin: 0rem;
+  text-align: left;
+}
+
+nav > * {
+  margin: 0rem 1rem;
+}
+
+nav > a {
+  color: black;
+}
+
+nav > a:link {
+  text-decoration: none;
+}
+
+nav > a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+nav > a,
+nav > button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+}
+
+nav > span {
+  font-weight: 700;
+}
+
+button,
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+h2 {
+  font-weight: 900;
+  text-align: center;
+  font-size: 32px;
+}
+
+nav:first-child {
+  padding-left: 8rem;
+}
+
+#header {
+    text-align: left;
+}
+#user {
+    text-align: right;
+    font-size: 18px;
+    font-weight: normal;
+}
